@@ -8,7 +8,7 @@ Este repositório tem como objetivo apresentar relatórios avançados construíd
 
 1. **Relatórios de Receita**
     
-    * Qual foi o total de receitas no ano de 1997?
+    * Qual foi o total de receitas no ano de 1996?
 
     ```sql
     CREATE VIEW total_revenues_1997_view AS
@@ -17,7 +17,7 @@ Este repositório tem como objetivo apresentar relatórios avançados construíd
     INNER JOIN (
         SELECT order_id 
         FROM orders 
-        WHERE EXTRACT(YEAR FROM order_date) = '1997'
+        WHERE EXTRACT(YEAR FROM order_date) = '1996'
     ) AS ord 
     ON ord.order_id = order_details.order_id;
     ```

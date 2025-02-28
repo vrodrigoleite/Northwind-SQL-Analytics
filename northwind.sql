@@ -4025,4 +4025,4 @@ GROUP BY customers.contact_name
 HAVING SUM(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) > 1000;
 
 
-
+-- Testes
